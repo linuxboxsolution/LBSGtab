@@ -1,0 +1,1 @@
+cmd_drivers/input/ff-memless.ko := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /usr/src/tegratab/gtab-2632/scripts/module-common.lds --build-id -o drivers/input/ff-memless.ko drivers/input/ff-memless.o drivers/input/ff-memless.mod.o

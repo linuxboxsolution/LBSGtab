@@ -1,0 +1,1 @@
+cmd_drivers/input/misc/built-in.o :=  /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/input/misc/built-in.o drivers/input/misc/uinput.o drivers/input/misc/gps_control.o drivers/input/misc/dummy_sensor.o drivers/input/misc/lis35de_accel.o drivers/input/misc/isl29023_ls.o 

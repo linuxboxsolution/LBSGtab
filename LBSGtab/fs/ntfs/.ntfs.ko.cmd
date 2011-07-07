@@ -1,0 +1,1 @@
+cmd_fs/ntfs/ntfs.ko := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /usr/src/tegratab/gtab-2632/scripts/module-common.lds --build-id -o fs/ntfs/ntfs.ko fs/ntfs/ntfs.o fs/ntfs/ntfs.mod.o

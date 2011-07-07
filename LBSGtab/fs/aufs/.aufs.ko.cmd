@@ -1,0 +1,1 @@
+cmd_fs/aufs/aufs.ko := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /usr/src/tegratab/gtab-2632/scripts/module-common.lds --build-id -o fs/aufs/aufs.ko fs/aufs/aufs.o fs/aufs/aufs.mod.o

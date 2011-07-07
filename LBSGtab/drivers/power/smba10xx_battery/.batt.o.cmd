@@ -1,0 +1,1 @@
+cmd_drivers/power/smba10xx_battery/batt.o := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/power/smba10xx_battery/batt.o drivers/power/smba10xx_battery/smart_battery.o drivers/power/smba10xx_battery/odm_i2c.o drivers/power/smba10xx_battery/odm_sbi.o 
