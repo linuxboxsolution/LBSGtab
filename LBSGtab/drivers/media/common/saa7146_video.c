@@ -759,7 +759,7 @@ static int vidioc_try_fmt_vid_cap(struct file *file, void *fh, struct v4l2_forma
 
 	DEB_EE(("V4L2_BUF_TYPE_VIDEO_CAPTURE: dev:%p, fh:%p\n", dev, fh));
 
-	fmt = format_by_fourcc(dev, f->fmt.pix.pixelformat);
+	fmt = saa7146_format_by_fourcc(dev, f->fmt.pix.pixelformat);
 	if (NULL == fmt)
 		return -EINVAL;
 
