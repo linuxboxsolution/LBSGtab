@@ -1,1 +1,1 @@
-cmd_usr/initramfs_data.cpio := /bin/bash /usr/src/tegratab/gtab-2632/scripts/gen_initramfs_list.sh -o usr/initramfs_data.cpio   -d
+cmd_usr/initramfs_data.cpio := /bin/bash /usr/src/lbs/LBSGtab/LBSGtab/scripts/gen_initramfs_list.sh -o usr/initramfs_data.cpio   -d

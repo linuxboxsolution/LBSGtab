@@ -1,1 +1,1 @@
-cmd_arch/arm/common/built-in.o :=  /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o arch/arm/common/built-in.o arch/arm/common/gic.o arch/arm/common/dmabounce.o arch/arm/common/clkdev.o 
+cmd_arch/arm/common/built-in.o :=  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o arch/arm/common/built-in.o arch/arm/common/gic.o arch/arm/common/dmabounce.o arch/arm/common/clkdev.o 

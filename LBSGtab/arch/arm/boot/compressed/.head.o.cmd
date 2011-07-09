@@ -1,4 +1,4 @@
-cmd_arch/arm/boot/compressed/head.o := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/boot/compressed/.head.o.d  -nostdinc -isystem /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/tegratab/gtab-2632/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2     -Wa,-march=all  -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/boot/compressed/head.o arch/arm/boot/compressed/head.S
+cmd_arch/arm/boot/compressed/head.o := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/boot/compressed/.head.o.d  -nostdinc -isystem /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2     -Wa,-march=all  -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/boot/compressed/head.o arch/arm/boot/compressed/head.S
 
 deps_arch/arm/boot/compressed/head.o := \
   arch/arm/boot/compressed/head.S \
@@ -18,7 +18,7 @@ deps_arch/arm/boot/compressed/head.o := \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/processor/id.h) \
     $(wildcard include/config/cpu/feroceon/old/id.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/unified.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
   include/linux/linkage.h \
   include/linux/compiler.h \
@@ -26,7 +26,7 @@ deps_arch/arm/boot/compressed/head.o := \
     $(wildcard include/config/profile/all/branches.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/linkage.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/linkage.h \
 
 arch/arm/boot/compressed/head.o: $(deps_arch/arm/boot/compressed/head.o)
 

@@ -1,1 +1,1 @@
-cmd_fs/nfs/nfs.ko := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /usr/src/tegratab/gtab-2632/scripts/module-common.lds --build-id -o fs/nfs/nfs.ko fs/nfs/nfs.o fs/nfs/nfs.mod.o
+cmd_fs/nfs/nfs.ko := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /usr/src/lbs/LBSGtab/LBSGtab/scripts/module-common.lds --build-id -o fs/nfs/nfs.ko fs/nfs/nfs.o fs/nfs/nfs.mod.o

@@ -1,8 +1,8 @@
-cmd_arch/arm/mach-tegra/headsmp.o := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mach-tegra/.headsmp.o.d  -nostdinc -isystem /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/tegratab/gtab-2632/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2      -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/mach-tegra/headsmp.o arch/arm/mach-tegra/headsmp.S
+cmd_arch/arm/mach-tegra/headsmp.o := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mach-tegra/.headsmp.o.d  -nostdinc -isystem /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2      -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/mach-tegra/headsmp.o arch/arm/mach-tegra/headsmp.S
 
 deps_arch/arm/mach-tegra/headsmp.o := \
   arch/arm/mach-tegra/headsmp.S \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/unified.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/linkage.h \
@@ -11,23 +11,23 @@ deps_arch/arm/mach-tegra/headsmp.o := \
     $(wildcard include/config/profile/all/branches.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/linkage.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/linkage.h \
   include/linux/init.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/assembler.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/smp.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/ptrace.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/hwcap.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/cache.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/hwcap.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   arch/arm/mach-tegra/include/mach/iomap.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/sizes.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/sizes.h \
   arch/arm/mach-tegra/include/mach/io.h \
   arch/arm/mach-tegra/power-macros.S \
 

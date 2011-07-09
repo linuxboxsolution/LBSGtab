@@ -11,13 +11,13 @@
 @	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc -Iinclude
-@ -I/usr/src/tegratab/gtab-2632/arch/arm/include
+@ -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include
 @ -Iarch/arm/mach-tegra/include -iprefix
-@ /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
+@ /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
 @ -D__USES_INITFINI__ -D__KERNEL__ -D__LINUX_ARM_ARCH__=7 -Uarm
 @ -DKBUILD_STR(s)=#s -DKBUILD_BASENAME=KBUILD_STR(bounds)
 @ -DKBUILD_MODNAME=KBUILD_STR(bounds) -isystem
-@ /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
+@ /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
 @ -include include/linux/autoconf.h -MD kernel/.bounds.s.d kernel/bounds.c
 @ -mlittle-endian -marm -mapcs -mno-sched-prolog -mabi=aapcs-linux
 @ -mno-thumb-interwork -march=armv7-a -msoft-float -mtune=cortex-a9
@@ -491,8 +491,6 @@ foo:
 	.ascii	"ZONE_DMA\000"
 .LASF21:
 	.ascii	"PG_reserved\000"
-.LASF51:
-	.ascii	"/usr/src/tegratab/gtab-2632\000"
 .LASF11:
 	.ascii	"PG_locked\000"
 .LASF34:
@@ -517,6 +515,8 @@ foo:
 	.ascii	"PG_owner_priv_1\000"
 .LASF1:
 	.ascii	"unsigned char\000"
+.LASF51:
+	.ascii	"/usr/src/lbs/LBSGtab/LBSGtab\000"
 .LASF14:
 	.ascii	"PG_uptodate\000"
 .LASF0:

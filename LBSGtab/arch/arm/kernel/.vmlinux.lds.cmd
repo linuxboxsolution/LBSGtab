@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/vmlinux.lds := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/tegratab/gtab-2632/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include   -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
+cmd_arch/arm/kernel/vmlinux.lds := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include   -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
 
 deps_arch/arm/kernel/vmlinux.lds := \
   arch/arm/kernel/vmlinux.lds.S \
@@ -22,16 +22,16 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/pm/trace.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/thread_info.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
   include/linux/compiler.h \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/fpstate.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/memory.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/highmem.h) \
@@ -41,12 +41,12 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/discontigmem.h) \
   include/linux/const.h \
   arch/arm/mach-tegra/include/mach/memory.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/sizes.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/page.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \

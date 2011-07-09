@@ -1,1 +1,1 @@
-cmd_drivers/mtd/nand/built-in.o :=  /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/mtd/nand/built-in.o drivers/mtd/nand/nand.o drivers/mtd/nand/nand_ecc.o drivers/mtd/nand/nand_ids.o 
+cmd_drivers/mtd/nand/built-in.o :=  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/mtd/nand/built-in.o drivers/mtd/nand/nand.o drivers/mtd/nand/nand_ecc.o drivers/mtd/nand/nand_ids.o 

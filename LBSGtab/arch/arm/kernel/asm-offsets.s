@@ -11,13 +11,13 @@
 @	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc -Iinclude
-@ -I/usr/src/tegratab/gtab-2632/arch/arm/include
+@ -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include
 @ -Iarch/arm/mach-tegra/include -iprefix
-@ /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
+@ /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
 @ -D__USES_INITFINI__ -D__KERNEL__ -D__LINUX_ARM_ARCH__=7 -Uarm
 @ -DKBUILD_STR(s)=#s -DKBUILD_BASENAME=KBUILD_STR(asm_offsets)
 @ -DKBUILD_MODNAME=KBUILD_STR(asm_offsets) -isystem
-@ /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
+@ /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
 @ -include include/linux/autoconf.h -MD arch/arm/kernel/.asm-offsets.s.d
 @ arch/arm/kernel/asm-offsets.c -mlittle-endian -marm -mapcs
 @ -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a
@@ -458,38 +458,38 @@ main:
 	.4byte	0x0
 	.4byte	0x0
 	.file 2 "include/asm-generic/int-ll64.h"
-	.file 3 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/posix_types.h"
+	.file 3 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/posix_types.h"
 	.file 4 "include/linux/types.h"
 	.file 5 "include/linux/capability.h"
-	.file 6 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/outercache.h"
+	.file 6 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/outercache.h"
 	.file 7 "include/linux/thread_info.h"
 	.file 8 "include/linux/time.h"
-	.file 9 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/fpstate.h"
-	.file 10 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/thread_info.h"
-	.file 11 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/system.h"
+	.file 9 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/fpstate.h"
+	.file 10 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/thread_info.h"
+	.file 11 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/system.h"
 	.file 12 "include/linux/sched.h"
-	.file 13 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/processor.h"
+	.file 13 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/processor.h"
 	.file 14 "include/linux/list.h"
-	.file 15 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/spinlock_types.h"
+	.file 15 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/spinlock_types.h"
 	.file 16 "include/linux/spinlock_types.h"
 	.file 17 "include/asm-generic/atomic-long.h"
 	.file 18 "include/linux/rbtree.h"
 	.file 19 "include/linux/cpumask.h"
 	.file 20 "include/linux/prio_tree.h"
 	.file 21 "include/linux/rwsem.h"
-	.file 22 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/rwsem.h"
+	.file 22 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/rwsem.h"
 	.file 23 "include/linux/wait.h"
 	.file 24 "include/linux/kernel.h"
 	.file 25 "include/linux/completion.h"
-	.file 26 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/page.h"
+	.file 26 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/page.h"
 	.file 27 "include/linux/mm_types.h"
-	.file 28 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/mmu.h"
+	.file 28 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/mmu.h"
 	.file 29 "include/linux/slab_def.h"
 	.file 30 "include/linux/mm.h"
 	.file 31 "include/asm-generic/cputime.h"
 	.file 32 "include/linux/rcupdate.h"
 	.file 33 "include/linux/sem.h"
-	.file 34 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/signal.h"
+	.file 34 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/signal.h"
 	.file 35 "include/asm-generic/signal-defs.h"
 	.file 36 "include/asm-generic/siginfo.h"
 	.file 37 "include/linux/signal.h"
@@ -509,7 +509,7 @@ main:
 	.file 51 "include/linux/vmstat.h"
 	.file 52 "include/linux/ioport.h"
 	.file 53 "include/linux/dma-mapping.h"
-	.file 54 "/usr/src/tegratab/gtab-2632/arch/arm/include/asm/hwcap.h"
+	.file 54 "/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/hwcap.h"
 	.file 55 "include/linux/timex.h"
 	.file 56 "include/linux/gfp.h"
 	.file 57 "include/trace/events/kmem.h"
@@ -9894,8 +9894,6 @@ main:
 	.ascii	"cputime\000"
 .LASF127:
 	.ascii	"exit_code\000"
-.LASF623:
-	.ascii	"it_real_incr\000"
 .LASF610:
 	.ascii	"running\000"
 .LASF27:
@@ -10362,8 +10360,8 @@ main:
 	.ascii	"clock_base\000"
 .LASF600:
 	.ascii	"siglock\000"
-.LASF848:
-	.ascii	"/usr/src/tegratab/gtab-2632\000"
+.LASF623:
+	.ascii	"it_real_incr\000"
 .LASF756:
 	.ascii	"sum_sleep_runtime\000"
 .LASF546:
@@ -11342,6 +11340,8 @@ main:
 	.ascii	"present_pages\000"
 .LASF780:
 	.ascii	"time_slice\000"
+.LASF848:
+	.ascii	"/usr/src/lbs/LBSGtab/LBSGtab\000"
 .LASF42:
 	.ascii	"flush_range\000"
 .LASF486:

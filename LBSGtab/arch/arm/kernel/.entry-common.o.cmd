@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/entry-common.o := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/kernel/.entry-common.o.d  -nostdinc -isystem /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/tegratab/gtab-2632/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2      -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/kernel/entry-common.o arch/arm/kernel/entry-common.S
+cmd_arch/arm/kernel/entry-common.o := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/kernel/.entry-common.o.d  -nostdinc -isystem /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2      -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/kernel/entry-common.o arch/arm/kernel/entry-common.S
 
 deps_arch/arm/kernel/entry-common.o := \
   arch/arm/kernel/entry-common.S \
@@ -11,25 +11,25 @@ deps_arch/arm/kernel/entry-common.o := \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/aeabi.h) \
     $(wildcard include/config/alignment/trap.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/unified.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/unistd.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/ftrace.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/unistd.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/ftrace.h \
     $(wildcard include/config/frame/pointer.h) \
     $(wildcard include/config/arm/unwind.h) \
   arch/arm/mach-tegra/include/mach/entry-macro.S \
     $(wildcard include/config/arm/gic.h) \
   arch/arm/mach-tegra/include/mach/iomap.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/sizes.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/sizes.h \
   arch/arm/mach-tegra/include/mach/io.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/hardware/gic.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/hardware/gic.h \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
     $(wildcard include/config/profile/all/branches.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/unwind.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/unwind.h \
   arch/arm/kernel/entry-header.S \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/v6.h) \
@@ -37,20 +37,20 @@ deps_arch/arm/kernel/entry-common.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/linkage.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/linkage.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/assembler.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/linkage.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/smp.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/ptrace.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/hwcap.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/ptrace.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/hwcap.h \
   include/asm/asm-offsets.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/errno.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/thread_info.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/fpstate.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
   arch/arm/kernel/calls.S \

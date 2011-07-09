@@ -1,4 +1,4 @@
-cmd_arch/arm/mm/proc-v7.o := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mm/.proc-v7.o.d  -nostdinc -isystem /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/tegratab/gtab-2632/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2      -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/mm/proc-v7.o arch/arm/mm/proc-v7.S
+cmd_arch/arm/mm/proc-v7.o := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/mm/.proc-v7.o.d  -nostdinc -isystem /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2      -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -c -o arch/arm/mm/proc-v7.o arch/arm/mm/proc-v7.S
 
 deps_arch/arm/mm/proc-v7.o := \
   arch/arm/mm/proc-v7.S \
@@ -13,7 +13,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/arm/errata/743622.h) \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/swp/emulate.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/unified.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/init.h \
@@ -25,19 +25,19 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
   include/linux/linkage.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/linkage.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/assembler.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/linkage.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/trace/irqflags.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/ptrace.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/hwcap.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/hwcap.h \
   include/asm/asm-offsets.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/pgtable-hwdef.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/pgtable.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/pgtable-hwdef.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   include/asm-generic/4level-fixup.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/proc-fns.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/proc-fns.h \
     $(wildcard include/config/cpu/32.h) \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
@@ -63,7 +63,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/cpu/mohawk.h) \
     $(wildcard include/config/cpu/v6.h) \
     $(wildcard include/config/cpu/v7.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/memory.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/dram/size.h) \
@@ -72,7 +72,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/discontigmem.h) \
   include/linux/const.h \
   arch/arm/mach-tegra/include/mach/memory.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/sizes.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
@@ -80,9 +80,9 @@ deps_arch/arm/mm/proc-v7.o := \
   arch/arm/mach-tegra/include/mach/vmalloc.h \
   arch/arm/mm/proc-macros.S \
     $(wildcard include/config/cpu/dcache/writethrough.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/thread_info.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/fpstate.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
 

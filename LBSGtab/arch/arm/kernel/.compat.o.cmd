@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/compat.o := /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/kernel/.compat.o.d  -nostdinc -isystem /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/tegratab/gtab-2632/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(compat)"  -D"KBUILD_MODNAME=KBUILD_STR(compat)"  -c -o arch/arm/kernel/.tmp_compat.o arch/arm/kernel/compat.c
+cmd_arch/arm/kernel/compat.o := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,arch/arm/kernel/.compat.o.d  -nostdinc -isystem /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -Iinclude  -I/usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -O1 -mtune=cortex-a9 -ftree-vectorize -ffast-math -fsingle-precision-constant -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(compat)"  -D"KBUILD_MODNAME=KBUILD_STR(compat)"  -c -o arch/arm/kernel/.tmp_compat.o arch/arm/kernel/compat.c
 
 deps_arch/arm/kernel/compat.o := \
   arch/arm/kernel/compat.c \
@@ -11,9 +11,9 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/types.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/bitsperlong.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
@@ -26,7 +26,7 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/posix_types.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/posix_types.h \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/spinlock/sleep.h) \
@@ -37,16 +37,16 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/numa.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /usr/src/tegratab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
+  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
   include/linux/linkage.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/linkage.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
     $(wildcard include/config/generic/find/first/bit.h) \
     $(wildcard include/config/generic/find/last/bit.h) \
     $(wildcard include/config/generic/find/next/bit.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/bitops.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/system.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/system.h \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
@@ -60,12 +60,12 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/trace/irqflags/support.h) \
     $(wildcard include/config/x86.h) \
   include/linux/typecheck.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/irqflags.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/ptrace.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/irqflags.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/hwcap.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/outercache.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/hwcap.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   arch/arm/mach-tegra/include/mach/barriers.h \
@@ -80,28 +80,28 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/ratelimit.h \
   include/linux/param.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/param.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
   include/linux/dynamic_debug.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/byteorder.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/swab.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/bug.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/div64.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/div64.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/string.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/string.h \
   include/linux/init.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/setup.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/setup.h \
     $(wildcard include/config/arch/lh7a40x.h) \
   include/asm/mach-types.h \
     $(wildcard include/config/arch/ebsa110.h) \
@@ -2999,7 +2999,7 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/mach/siemens/l0.h) \
     $(wildcard include/config/mach/ventana.h) \
     $(wildcard include/config/mach/tegra/generic.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/page.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/page.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
@@ -3009,7 +3009,7 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/sparsemem.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/glue.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
@@ -3022,7 +3022,7 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/memory.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/highmem.h) \
@@ -3032,12 +3032,12 @@ deps_arch/arm/kernel/compat.o := \
     $(wildcard include/config/discontigmem.h) \
   include/linux/const.h \
   arch/arm/mach-tegra/include/mach/memory.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/sizes.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
   include/asm-generic/getorder.h \
-  /usr/src/tegratab/gtab-2632/arch/arm/include/asm/mach/arch.h \
+  /usr/src/lbs/LBSGtab/LBSGtab/arch/arm/include/asm/mach/arch.h \
   arch/arm/kernel/compat.h \
 
 arch/arm/kernel/compat.o: $(deps_arch/arm/kernel/compat.o)
