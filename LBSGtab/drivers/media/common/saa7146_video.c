@@ -1264,16 +1264,12 @@ static int buffer_prepare(struct videobuf_queue *q,
 
 		sfmt = format_by_fourcc(dev,buf->fmt->pixelformat);
 
+		release_all_pagetables(dev, buf);
 		if( 0 != IS_PLANAR(sfmt->trans)) {
-			saa7146_pgtable_free(dev->pci, &buf->pt[0]);
-			saa7146_pgtable_free(dev->pci, &buf->pt[1]);
-			saa7146_pgtable_free(dev->pci, &buf->pt[2]);
-
 			saa7146_pgtable_alloc(dev->pci, &buf->pt[0]);
 			saa7146_pgtable_alloc(dev->pci, &buf->pt[1]);
 			saa7146_pgtable_alloc(dev->pci, &buf->pt[2]);
 		} else {
-			saa7146_pgtable_free(dev->pci, &buf->pt[0]);
 			saa7146_pgtable_alloc(dev->pci, &buf->pt[0]);
 		}
 
@@ -1369,7 +1365,7 @@ static void video_init(struct saa7146_dev *dev, struct saa7146_vv *vv)
 
 static int video_open(struct saa7146_dev *dev, struct file *file)
 {
-	struct saa7146_fh *fh = (struct saa7146_fh *)file->private_data;
+	struct saa7146_fh *fh = file->private_data;
 	struct saa7146_format *sfmt;
 
 	fh->video_fmt.width = 384;
@@ -1377,7 +1373,7 @@ static int video_open(struct saa7146_dev *dev, struct file *file)
 	fh->video_fmt.pixelformat = V4L2_PIX_FMT_BGR24;
 	fh->video_fmt.bytesperline = 0;
 	fh->video_fmt.field = V4L2_FIELD_ANY;
-	sfmt = format_by_fourcc(dev,fh->video_fmt.pixelformat);
+	fmt = saa7146_format_by_fourcc(dev,fh->video_fmt.pixelformat);
 	fh->video_fmt.sizeimage = (fh->video_fmt.width * fh->video_fmt.height * sfmt->depth)/8;
 
 	videobuf_queue_sg_init(&fh->video_q, &video_qops,
@@ -1393,7 +1389,7 @@ static int video_open(struct saa7146_dev *dev, struct file *file)
 
 static void video_close(struct saa7146_dev *dev, struct file *file)
 {
-	struct saa7146_fh *fh = (struct saa7146_fh *)file->private_data;
+	struct saa7146_fh *fh = file->private_data;
 	struct saa7146_vv *vv = dev->vv_data;
 	struct videobuf_queue *q = &fh->video_q;
 	int err;
