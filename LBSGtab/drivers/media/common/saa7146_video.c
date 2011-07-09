@@ -1205,6 +1205,12 @@ static int buffer_activate (struct saa7146_dev *dev,
 	mod_timer(&vv->video_q.timeout, jiffies+BUFFER_TIMEOUT);
 	return 0;
 }
+static void release_all_pagetables(struct saa7146_dev *dev, struct saa7146_buf *buf)
+{
+	saa7146_pgtable_free(dev->pci, &buf->pt[0]);
+	saa7146_pgtable_free(dev->pci, &buf->pt[1]);
+	saa7146_pgtable_free(dev->pci, &buf->pt[2]);
+}
 
 static int buffer_prepare(struct videobuf_queue *q,
 			  struct videobuf_buffer *vb, enum v4l2_field field)
