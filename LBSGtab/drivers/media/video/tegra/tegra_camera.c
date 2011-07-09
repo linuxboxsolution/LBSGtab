@@ -356,13 +356,8 @@ static struct platform_driver tegra_camera_driver = {
 	.driver = { .name = TEGRA_CAMERA_NAME }
 };
 
-static struct dentry *debugfs_dir;
-static struct dentry *debugfs_U32_caminfo;
-
 static int __init tegra_camera_init(void)
 {
-	debugfs_dir=debugfs_create_dir("tegra_camera",NULL);
-	debugfs_U32_caminfo=debugfs_create_u32("caminfo",0444, debugfs_dir, &caminfo);
 	return platform_driver_register(&tegra_camera_driver);
 }
 
