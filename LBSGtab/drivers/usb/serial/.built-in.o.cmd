@@ -1,1 +1,0 @@
-cmd_drivers/usb/serial/built-in.o :=  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/usb/serial/built-in.o drivers/usb/serial/usbserial.o drivers/usb/serial/cp210x.o drivers/usb/serial/moto_modem.o drivers/usb/serial/option.o drivers/usb/serial/pl2303.o 

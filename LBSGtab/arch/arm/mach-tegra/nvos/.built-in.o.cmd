@@ -1,1 +1,0 @@
-cmd_arch/arm/mach-tegra/nvos/built-in.o :=  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o arch/arm/mach-tegra/nvos/built-in.o arch/arm/mach-tegra/nvos/nvos.o arch/arm/mach-tegra/nvos/nvos_page.o arch/arm/mach-tegra/nvos/nvustring.o arch/arm/mach-tegra/nvos/nvos_exports.o 

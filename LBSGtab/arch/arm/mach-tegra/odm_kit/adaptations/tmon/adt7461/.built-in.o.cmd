@@ -1,1 +1,0 @@
-cmd_arch/arm/mach-tegra/odm_kit/adaptations/tmon/adt7461/built-in.o :=  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o arch/arm/mach-tegra/odm_kit/adaptations/tmon/adt7461/built-in.o arch/arm/mach-tegra/odm_kit/adaptations/tmon/adt7461/nvodm_tmon_adt7461.o 
