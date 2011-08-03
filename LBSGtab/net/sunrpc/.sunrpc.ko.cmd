@@ -1,1 +1,0 @@
-cmd_net/sunrpc/sunrpc.ko := /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /usr/src/lbs/LBSGtab/LBSGtab/scripts/module-common.lds --build-id -o net/sunrpc/sunrpc.ko net/sunrpc/sunrpc.o net/sunrpc/sunrpc.mod.o

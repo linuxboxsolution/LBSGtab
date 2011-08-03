@@ -1,1 +1,0 @@
-cmd_drivers/usb/gadget/built-in.o :=  /usr/src/lbs/LBSGtab/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/usb/gadget/built-in.o drivers/usb/gadget/fsl_udc_core.o drivers/usb/gadget/tegra_udc.o drivers/usb/gadget/android.o drivers/usb/gadget/f_adb.o drivers/usb/gadget/f_mass_storage.o 
